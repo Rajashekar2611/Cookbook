@@ -1,0 +1,26 @@
+
+<div  class="container" style="margin-top: 7%;border: 12px solid #003150">
+        <h2 align="center" style="color: red">{{recipe.title}}</h2>
+        <p align="center"><span class="text-success"><h5> <i class="fa fa-clock-o"></i><b>
+                {{recipe.createDate | date : 'MMM d, y, h:mm:ss a'}}
+            </b></h5></span></p>
+        <hr>
+            <a  href="#">
+                <div class="col-lg-12 item">
+                    <div class="card">
+                        <p innerHTML="{{recipe.description}}"></p>
+<hr>
+                        <br>
+                    </div>
+                </div>
+            </a>
+        <p>
+            <a [routerLink]="['../../recipe/edit/',id]"><button class="btn btn-danger btn-lg"> <i class="fa fa-edit "></i>Edit</button></a>
+        </p>
+           
+
+
+</div>
+<br>
+<br>
+<br>

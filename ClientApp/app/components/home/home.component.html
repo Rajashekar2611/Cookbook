@@ -1,0 +1,52 @@
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPYK7C9LFxjeEiNr2Qtc9Kpuy-IM3bPMc&libraries=places"></script>
+<script>
+$(function () {
+           var options = {
+                  types: ['(cities)'],
+                  componentRestrictions: {country: "us"}
+                 };
+                 var input = document.getElementById('autocomplete');
+                 var autocomplete = new google.maps.places.Autocomplete(input, options);
+          });
+
+</script>
+<script type="text/javascript">
+$("body").prepend('<div id="preloader"><div class="spinner-sm spinner-sm-1" id="status"> </div></div>');
+$(window).on('load', function () { // makes sure the whole site is loaded
+$('#status').fadeOut(); // will first fade out the loading animation
+$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+$('body').delay(350).css({ 'overflow': 'visible' });
+})
+</script>
+<div>
+    <br><br>
+<div class="overlay">
+    <img class="img-responsive" src="http://cleaverbrooks.com/uploadedimages/internet_content/products_and_solutions/boilers/firetube/cbex_elite_dryback/cbex%20dryback%20three%20quarter%20view%20215%20x%201864747.jpg?n=771" style="background-position:center center; margin-top:-20px;max-width:105%" />
+        
+<div class="centered2" align="center">
+            <div class="container">
+                <div class="form-box pull-right">
+                    <div class="form-top col-lg-12">
+                        <div class="row" style="margin-left:-20px;">
+                            <div class="input-group">
+                                <input class="form-control5" placeholder="Location" name="srch-term" id="autocomplete" type="search">
+                                <div class="input-group-btn">
+                                    <button type="submit" class="btn btn-primary" id="searchbtn">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<br><br>
+<div class="container" align="center">
+        <h3  style="color:#004488">
+            Hi, Welcome to BPO!<br /><br />
+
+        </h3>
+</div>
+</div>
